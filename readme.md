@@ -1,4 +1,4 @@
-# Testing Project for ASPP 2021 Bordeaux
+# Testing Project for ASPP 2022 Bilbao
 
 ## Exercise 1 -- @parametrize and the logistic map
 
