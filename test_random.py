@@ -12,21 +12,21 @@ def random_state():
     random_state = np.random.RandomState(SEED)
     return random_state
 
-# def test_converge(random_state):
-#     x = random_state.rand()
-#     result = log.iterate_f(100, x, 1.5)
-#     print(result)
-#     assert_allclose(result[-1], 1/3)
+def test_converge(random_state):
+    x = random_state.rand()
+    result = log.iterate_f(100, x, 1.5)
+    print(result)
+    assert_allclose(result[-1], 1/3)
 
 # def test_bounded(random_state):
 #     x = random_state.rand()
 #     result = log.iterate_f(100000, x, 3.8)
 #     assert np.all(result < 1) & np.all(result > 0)
 
-def test_aperiodic(random_state):
-    x = random_state.rand()
-    result = log.iterate_f(100000, x, 3.8)
-    print(result)
-    assert np.unique(result[-1000])
+# def test_aperiodic(random_state):
+#     x = random_state.rand()
+#     result = log.iterate_f(100000, x, 3.8)
+#     print(result)
+#     assert np.unique(result[-1000])
     
 

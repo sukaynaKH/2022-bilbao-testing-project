@@ -19,4 +19,4 @@ jobs:
         python -m pip install pytest numpy
     - name: Test with pytest
       run:
-        pytest -sv 2022-bilbao-testing-project/test_random.py
+        pytest -sv 2022-bilbao-testing-project
